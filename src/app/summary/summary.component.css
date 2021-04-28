@@ -1,0 +1,42 @@
+.example-card {
+    width: 365px;
+    max-width: 365px;
+    height: 100px;
+  }
+
+.container {
+    padding-top: 25px;
+}
+
+.table-container {
+    padding-top: 25px;
+    width: 100%;
+}
+
+.mat-card-title {
+    font-size:30px;
+}
+
+.mat-card-header {
+    justify-content: center;
+    font-size: 30px;
+}
+
+.transactions-example-card {
+    width: 775px;
+    max-width: 775px;
+}
+
+.transactions-example-card {
+    width: 775px;
+    max-width: 775px;
+}
+
+table {
+    width: 775px;
+}
+
+.transactions-table-container {
+    height: 350px;
+    overflow: auto;
+}

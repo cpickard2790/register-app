@@ -1,0 +1,56 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-icon {
+    border:none;
+}
+
+.button {
+    padding-left: 5%;
+}
+
+.button-container {
+    padding-left: 5%;
+}
+
+.active-link {
+    text-decoration: underline;
+}
+
+.navContainer {
+    display: table;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.globalNavContainer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #673AB7;
+    z-index: 1030;
+}
+
+.section {
+    background: #f5f7fa;
+}
+
+.main-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 72px 0 9rem;
+    position: relative;
+
+}
+
+/*.innerNavContainer {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+} */

@@ -1,0 +1,26 @@
+table {
+    width: 775px;
+}
+
+.example-card {
+    width: 775px;
+    max-width: 775px;
+    height: 563px;
+}
+
+.table-container {
+    height: 350px;
+    overflow: auto;
+}
+
+.mat-card-title {
+    font-size:30px;
+}
+
+.mat-card-header {
+    padding-left: 30%;
+}
+
+.container {
+    padding-top: 25px;
+}

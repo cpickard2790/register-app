@@ -1,0 +1,23 @@
+<div class="globalNavContainer">
+  <div class="navContainer">
+    <p>
+      <mat-toolbar color="primary">
+      <span>My Register</span>
+      <div class="button-container">
+      <button mat-button class="button" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</button>
+      <button mat-button class="button" routerLink="/transactions" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Transactions</button>
+      <button mat-button class="button" routerLink="/bills" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Bills</button>
+      </div>
+    </mat-toolbar>
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <section class="main-content">
+    <div class="container" fxLayout fxLayoutAlign="center" fxLayoutGap="15px">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</div>
+

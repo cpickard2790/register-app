@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Dialog with elements</h1>
+<form (ngSubmit)="onSubmit()">
+<div mat-dialog-content>
+      <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Day Of Month</mat-label>
+            <mat-select ([ngModel])="selectedDate" (valueChange)="onSelection($event)" name="date">
+              <mat-option *ngFor="let date of dates" [value]="date">{{date.viewValue}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+      </p>
+      <p>{{bill.dateDue}}</p>
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Bill</mat-label>
+          <input matInput placeholder="ex. Mortgage" [(ngModel)]="bill.name" name="name">
+          <mat-hint>Name of the bill</mat-hint>
+        </mat-form-field>
+      </p>  
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Amount</mat-label>
+          <input matInput placeholder="ex. 1368.96" [(ngModel)]="bill.amount" name="amount">
+          <mat-hint>Amount of the bill</mat-hint>
+        </mat-form-field>
+      </p>  
+    
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="openSnackBar()">Add</button>
+</div>
+</form>

@@ -1,0 +1,57 @@
+
+<form (ngSubmit)="onSubmit()">
+ <table>
+    <tr>
+        <td><p>
+            <mat-form-field class="date" appearance="legacy">
+              <mat-label>Date</mat-label>
+              <input matInput placeholder="ex. 02/07" [(ngModel)]="item.date" name="date">
+            </mat-form-field>
+          </p></td>
+          <td><p>
+            <mat-form-field class="desc" appearance="legacy">
+              <mat-label>Description</mat-label>
+              <input matInput placeholder="Rent" [(ngModel)]="item.description" name="description">
+            </mat-form-field>
+          </p></td>
+          <td><p>
+            <mat-form-field class="withdraw" appearance="legacy">
+              <mat-label>Withdraw</mat-label>
+              <input matInput placeholder="550.75" [(ngModel)]="item.withdraw" name="withdraw">
+            </mat-form-field>
+          </p></td>
+          <td><p>
+            <mat-form-field class="deposit" appearance="legacy">
+              <mat-label>Deposit</mat-label>
+              <input matInput placeholder="1020.50" [(ngModel)]="item.deposit" name="deposit">
+            </mat-form-field>
+          </p></td>
+          <td><button mat-raised-button color="primary">Add</button></td>
+    </tr>
+
+ </table>
+ </form>
+      <!--
+      <tr>
+        <th scope="row"></th>
+        <td><p>
+            <mat-form-field appearance="legacy">
+              <mat-label>Date</mat-label>
+              <input matInput placeholder="ex. 02/07">
+            </mat-form-field>
+          </p></td>
+        <td><p>
+            <mat-form-field appearance="legacy">
+              <mat-label>Date</mat-label>
+              <input matInput placeholder="ex. 02/07">
+            </mat-form-field>
+          </p></td>
+        <td><p>
+            <mat-form-field appearance="legacy">
+              <mat-label>Date</mat-label>
+              <input matInput placeholder="ex. 02/07">
+            </mat-form-field>
+          </p></td>
+      </tr>
+    </tbody>
+  </table>-->
