@@ -1,6 +1,6 @@
 # RegisterApp
 
-Frontend to 'checkbook'
+Frontend to 'checkbook', https://github.com/cpickard2790/checkbook
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
