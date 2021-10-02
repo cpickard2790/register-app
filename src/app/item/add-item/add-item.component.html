@@ -17,13 +17,13 @@
           <td><p>
             <mat-form-field class="withdraw" appearance="legacy">
               <mat-label>Withdraw</mat-label>
-              <input matInput placeholder="550.75" [(ngModel)]="item.withdraw" name="withdraw">
+              <input matInput placeholder="550.75" [(ngModel)]="item.withdraw" name="withdraw" [disabled]="(item.deposit > 0)">
             </mat-form-field>
           </p></td>
           <td><p>
             <mat-form-field class="deposit" appearance="legacy">
               <mat-label>Deposit</mat-label>
-              <input matInput placeholder="1020.50" [(ngModel)]="item.deposit" name="deposit">
+              <input matInput placeholder="1020.50" [(ngModel)]="item.deposit" name="deposit" [disabled]="(item.withdraw > 0)">
             </mat-form-field>
           </p></td>
           <td><button mat-raised-button color="primary">Add</button></td>
